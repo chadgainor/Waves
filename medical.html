@@ -1,0 +1,370 @@
+<html>
+  <head>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link href="swag.css" type="text/css" rel="stylesheet">
+  <style type="text/css">
+            body{
+          font-family: 'SEGOEUIL';
+                }
+          body {
+      background-color: black;
+  }
+      
+      a.Open{
+ font-size : 20px;
+  
+      color: #00D900;
+
+  }
+      a.Closed{
+    font-size : 20px;
+  
+      color: #808080;
+}
+      
+      p,h2{
+    display:inline;
+}
+
+  .item{
+  font-size : 30px;
+    
+      color: #ffffff;
+      
+  }
+      .itemred{
+  font-size : 50px;
+      
+      color: #FF0000;
+      
+  }
+      .itemyel{
+  font-size : 50px;
+  
+      color: #FAFE00;
+      
+  }
+      .itemgreen{
+  font-size : 50px;
+  
+      color: #00D900;
+      
+  }
+.itemgrey{
+  font-size : 50px;
+  
+      color: #808080;
+      
+  }
+   .itemorange{
+  font-size : 50px;
+  
+      color: #ffa500;
+      
+  }
+       .itempink{
+  font-size : 50px;
+  
+      color: #FF00C0;
+      
+  }
+      
+  .container {
+  
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -moz-transform: translateX(-50%) translateY(-50%);
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+  }
+ 
+  @media (max-width: 767px)
+  {
+    .itemred{
+  font-size : 40px;
+   
+  }
+      .itemgrey{
+  font-size : 40px;
+   
+  }
+      .itemyel{
+  font-size : 40px;
+  
+  }
+      .itemgreen{
+  font-size : 40px;
+
+      
+  }
+   .itemorange{
+  font-size : 40px;
+  
+  }
+       .itempink{
+  font-size : 40px;
+  
+      
+  }
+  
+  </style>
+  
+  <title>HB Index</title>
+  
+  </head>
+  
+  <body onload="test();">
+  <div class="common">
+  <div class="container">
+  
+      <div id="food">
+      <a href="javascript:void(0);" style="text-decoration:none" class="item4 itemred itemlist">Telehealth</a>
+      </div>
+      <br> 
+      <div id="services">
+      <a href="" style="text-decoration:none" class="item4 itemgrey itemlist">Hospital Check-in</a>
+     </div>
+      <br>
+        
+  <div id="services"><a href="javascript:void(0);" style="text-decoration:none" class="item4 itemgrey itemlist">Rx Delivery</a>
+  </div><br>
+     
+
+  </div>
+  </div> 
+
+<div class="food-section">
+<div class="container">
+    <div id="food-1">
+  <a href="tel:+18475555555" style="text-decoration:none" class="item7 itemred itemlist">Jamie Tan F MD</a><p class="time">6-24</p>
+<a href="#" class="Open">Call to Schedule</a>
+<a href="#" class="Closed">Closed</a><br>
+  <a href="tel:+18475555555" style="text-decoration:none" class="item8 itemred itemlist">Doctor 2</a><p class="time">6-8</p>
+<a href="#" class="Open">Open</a>
+<a href="#" class="Closed">Closed</a><br>
+  <a href="tel:+18475555555" style="text-decoration:none" class="item9 itemred itemlist">Doctor 3</a><p class="time">6-9</p>
+<a href="#" class="Open">Open</a>
+<a href="#" class="Closed">Closed</a><br>
+    <a href="tel:+18475555555" style="text-decoration:none" class="item9 itemred itemlist">Hospital</a><p class="time">6-11</p>
+<a href="#" class="Open">Open</a>
+<a href="#" class="Closed">Closed</a><br>
+   
+    
+</div>
+</div>
+    </div>
+
+
+
+<div class="sevices-section">
+<div class="container">
+  
+     <a href="javascript:void(0);" style="text-decoration:none" class="item10 itemgrey itemlist">Coming Soon</a><br>
+
+</div>
+</div>
+
+<div class="hospital-section">
+<div class="container">
+  <a href="medical.html" style="text-decoration:none" class="item13 itemgrey itemlist">Hospital Check-in</a><br>
+  <a href="javascript:void(0);" style="text-decoration:none" class="item14 itemgrey itemlist">Telehealth</a><br>
+  <a href="javascript:void(0);" style="text-decoration:none" class="item15 itemgrey itemlist">Rx Delivery</a><br>
+</div>
+</div>
+
+<div class="city-section">
+<div class="container">
+  <a href="javascript:void(0);" style="text-decoration:none" class="item16 itemorange itemlist">Police</a><br>
+  <a href="javascript:void(0);" style="text-decoration:none" class="item17 itemorange itemlist">Fire</a><br>
+  <a href="javascript:void(0);" style="text-decoration:none" class="item18 itemorange itemlist">Library</a><br>
+  <a href="javascript:void(0);" style="text-decoration:none" class="item18 itemorange itemlist">City Hall</a><br>
+</div>
+</div>
+
+<div class="church-section">
+<div class="container">
+  <a href="javascript:void(0);" style="text-decoration:none" class="item19 itemgrey">Request Ride</a><br>
+  <a href="javascript:void(0);" style="text-decoration:none" class="item20 itempink">Call TAT</a><br>
+</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://camwiegert.github.io/baffle/dist/baffle.min.js"></script>
+  <script>
+  var b1 = baffle('.item1').start();
+  var b2 = baffle('.item2').start();
+  var b3 = baffle('.item3').start();
+  var b4 = baffle('.item4').start();
+  var b5 = baffle('.item5').start();
+  var b6 = baffle('.item6').start();
+ 
+  setTimeout(function(){
+      b1.reveal(600);
+  }, );
+  setTimeout(function(){
+      b2.reveal(500);
+  }, );
+  setTimeout(function(){
+      b3.reveal(700);
+  }, );
+  setTimeout(function(){
+      b4.reveal(550);
+  }, );setTimeout(function(){
+      b5.reveal(6500);
+  }, );setTimeout(function(){
+      b6.reveal(7500);
+  }, 
+  );
+  </script>
+      
+  <script>
+$(document).ready(function(){
+  
+$(".food-section,.sevices-section,.hospital-section,.city-section,.church-section").hide();
+$("#food").click(function(){
+  $(".common").hide();
+  $(".food-section").show();
+  var b7 = baffle('.item7').start();
+  var b8 = baffle('.item8').start();
+  var b9 = baffle('.item9').start();
+
+  setTimeout(function(){
+      b7.reveal(700);
+  }, 
+  );setTimeout(function(){
+      b8.reveal(600);
+  },
+  );setTimeout(function(){
+      b9.reveal(500);
+  },  
+  );
+});
+
+$("#services").click(function(){
+  $(".common").hide();
+  $(".sevices-section").show();
+  var b10 = baffle('.item10').start();
+  var b11 = baffle('.item11').start();
+  var b12 = baffle('.item12').start();
+
+  setTimeout(function(){
+      b10.reveal(600);
+  }, 
+  );setTimeout(function(){
+      b11.reveal(550);
+  },
+  );setTimeout(function(){
+      b12.reveal(700);
+  },  
+  );
+});
+
+$("#hospital").click(function(){
+  $(".common").hide();
+  $(".hospital-section").show();
+  var b13 = baffle('.item13').start();
+  var b14 = baffle('.item14').start();
+  var b15 = baffle('.item15').start();
+
+  setTimeout(function(){
+      b13.reveal(600);
+  }, 
+  );setTimeout(function(){
+      b14.reveal(500);
+  },
+  );setTimeout(function(){
+      b15.reveal(700);
+  },  
+  );
+});
+
+$("#city").click(function(){
+  $(".common").hide();
+  $(".city-section").show();
+  var b16 = baffle('.item16').start();
+  var b17 = baffle('.item17').start();
+  var b18 = baffle('.item18').start();
+
+  setTimeout(function(){
+      b16.reveal(500);
+  }, 
+  );setTimeout(function(){
+      b17.reveal(600);
+  },
+  );setTimeout(function(){
+      b18.reveal(550);
+  },  
+  );
+});
+
+$("#church").click(function(){
+  $(".common").hide();
+  $(".church-section").show();
+  var b19 = baffle('.item19').start();
+  var b20 = baffle('.item20').start();
+  var b21 = baffle('.item21').start();
+
+  setTimeout(function(){
+      b19.reveal(600);
+  }, 
+  );setTimeout(function(){
+      b20.reveal(500);
+  },
+  );setTimeout(function(){
+      b21.reveal(700);
+  },  
+  );
+});
+
+
+setInterval(function(){
+  $(".common").show();
+  $(".food-section").hide();
+  $(".sevices-section").hide();
+  $(".hospital-section").hide();
+  $(".city-section").hide();
+  $(".church-section").hide();
+    }, 
+    4000);
+
+}); 
+</script>
+      
+      <script>
+    function test() {
+
+
+        $('.time').hide();
+        var d = new Date();
+        var d1=d.getHours();
+
+
+        var workingHours = document.getElementsByClassName("time");
+        for(var i=0;i< workingHours.length;i++)
+        {
+          var Hourss = workingHours[i].innerHTML;
+          var startTime = Hourss.split("-");
+
+          var showNumber = document.getElementsByClassName("Open");
+            var hideNumber = document.getElementsByClassName("Closed");
+          for(var j=0;j< showNumber.length;j++){
+           if(i ==j){
+            if (d1 >= startTime[0]  && d1 < startTime[1] ) {
+                $(showNumber[i]).show();
+                $(hideNumber[i]).hide();
+            }
+            else{
+                $(hideNumber[i]).show();
+                $(showNumber[i]).hide();
+
+            }
+           }
+          }
+        }
+
+    }
+
+</script>
+  
+  </body></html>
